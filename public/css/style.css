@@ -1,0 +1,79 @@
+body{
+    color:#333333;
+    font-family:arial;
+    max-width:650px;
+    /* margin auto makes page fit automatically as enlarged */
+    margin:0 auto;
+    /* to prevent content jammed against border of page */
+    padding:0 16px;
+
+
+    /* to display layout of content in flex manner */
+    display: flex;
+    /* default direction is row */
+    flex-direction: column;
+    /* vh is viewport height,in this case, */
+    min-height: 100vh;
+}
+
+.main-content{
+    /* gives element as much as space as it needs */
+    flex-grow:1;/*take over all remaining space*/
+
+}
+
+footer{
+    color:#888888;
+    border-top:1px solid #eeeeee;
+    margin-top:16px;
+    padding: 16px 0;
+
+    /*
+    background: blue;
+    /* outside the box */
+    /* margin:16px; */
+    /* padding inside box and around content in background */
+    /* padding:16px; */
+    
+}
+
+
+
+header{
+    margin-top:16px;
+    margin-bottom:48px;
+
+}
+
+h1{
+    font-size:64px;
+    margin-bottom:16px;
+
+}
+
+/* to specifically target links inside header */
+header a{
+    color:#888888;
+    margin-right:16px;
+    text-decoration:none;
+
+}
+
+/* to specifically style a class */
+.portrait{
+    width:250px;
+}
+
+input{
+    border:1px soild #cccccccc;
+    padding:8px;
+}
+
+button{
+    /* to change cursor style */
+    cursor:pointer;
+    border:1px solid#88888888;
+    background: #88888888;
+    color:white;
+    padding:8px;
+}

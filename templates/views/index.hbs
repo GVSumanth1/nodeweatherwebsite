@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    {{!-- to have icon --}}
+    <link rel="icon" href="/img/weather.png">
+    <link rel="stylesheet" href="/css/style.css">
+    {{!-- <script src="/js/app.js"></script> --}}
+    <!-- shown in console  -->
+</head>
+<body>
+    {{!-- a css technique to push footer to bottom of every page --}}
+    {{!-- keep everything except footer in another div in body --}}
+    <div class="main-content">
+    {{>header}}
+    <p>use this site to get your weather</p>
+
+    {{!-- default behavior of formm is to reload page --}}
+    <form>
+        {{!-- input is an empty element and there is seperate closing tag --}}
+        <input placeholder="location">
+        <button>Search</button>
+
+    </form>
+
+    <p id="message-1"></p>
+    <p id="message-2"></p>
+
+    </div>
+    {{>footer}}
+
+    {{!-- else if placed above,script going to run before form
+    and no desired output is made --}}
+    <script src="/js/app.js"></script>
+
+
+
+</body>
+
+
+</html>
